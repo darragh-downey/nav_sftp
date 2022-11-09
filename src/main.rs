@@ -5,7 +5,7 @@ use nav_sftp::Config;
 fn main() {
     let args: Vec<String> = env::args().collect();
 
-    let config = Config::build(&args).unwrap_or_else(|err|{
+    let config = Config::build(&args).unwrap_or_else(|err| {
         println!("Problem while parsing command line arguments: {err}");
         process::exit(1);
     });
