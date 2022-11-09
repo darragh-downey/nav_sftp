@@ -21,7 +21,7 @@ pub fn connect(config: &config::Config) -> Result<Sftp, Box<dyn Error>> {
     Ok(sftp_conn)
 }
 
-pub fn delete(sftp_conn: &Sftp) -> Result<(), Box<dyn Error>> {
+pub fn delete(_sftp_conn: &Sftp) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
@@ -49,6 +49,6 @@ mod tests {
         let args = vec![];
         let config = config::Config::build(&args).unwrap();
 
-        let sftp_conn = connect(&config).unwrap();
+        let _sftp_conn = connect(&config).unwrap();
     }
 }

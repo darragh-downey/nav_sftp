@@ -1,7 +1,4 @@
 use std::error::Error;
-use std::net::TcpStream;
-
-use ssh2::Session;
 
 pub mod sftp;
 
@@ -29,6 +26,7 @@ mod tests {
         let username = "".to_string();
         let password = "".to_string();
         let path = "".to_string();
+        let days = "".to_string();
 
         let res = Config::build(&args).unwrap();
 
@@ -37,7 +35,8 @@ mod tests {
                 addr,
                 username,
                 password,
-                path
+                path,
+                days,
             },
             res
         );
