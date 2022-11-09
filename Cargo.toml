@@ -1,5 +1,5 @@
 [package]
-name = "clean_sftp"
+name = "nav_sftp"
 version = "0.1.0"
 edition = "2021"
 
