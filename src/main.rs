@@ -1,6 +1,6 @@
 use std::{env, process};
 
-use nav_sftp::Config;
+use nav_sftp::config::Config;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
